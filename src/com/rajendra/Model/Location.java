@@ -8,6 +8,10 @@ package com.rajendra.Model;
  *
  */
 public class Location {
+	private Integer xCoord;
+	private Integer yCoord;
+
+
 	public Location(Integer xCoord, Integer yCoord) {
 		super();
 		this.xCoord = xCoord;
@@ -27,9 +31,4 @@ public class Location {
 	public void setyCoord(Integer yCoord) {
 		this.yCoord = yCoord;
 	}
-	
-	private Integer xCoord; 
-	private Integer yCoord; 
-	
-	
 }

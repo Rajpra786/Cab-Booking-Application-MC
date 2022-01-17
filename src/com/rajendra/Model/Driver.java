@@ -12,6 +12,20 @@ public class Driver extends User{
 	private Boolean status; // true : available , false: not-available
 	private double earning;
 
+	public Driver(String userName, String sex, Number age, Location location, Vehicle vehicle) {
+		super(userName, sex, age, location);
+		this.vehicle = vehicle;
+		this.status = true;
+		this.earning = 0;
+	}
+
+	public Driver(User user, Vehicle vehicle){
+		super(user.getUserName(), user.getSex(), user.getAge(),user.getLocation());
+		this.vehicle = vehicle;
+		this.status = true;
+		this.earning = 0;
+	}
+
 	public double getEarning() {
 		return earning;
 	}
@@ -22,20 +36,6 @@ public class Driver extends User{
 
 	public void addEarning(double earning){
 		this.earning += earning;
-	}
-
-	public Driver(String userName, String sex, Number age, Location location, Vehicle vehicle) {
-		super(userName, sex, age, location);
-		this.vehicle = vehicle; 
-		this.status = true;
-		this.earning = 0;
-	}
-
-	public Driver(User user, Vehicle vehicle){
-		super(user.getUserName(), user.getSex(), user.getAge(),user.getLocation());
-		this.vehicle = vehicle;
-		this.status = true;
-		this.earning = 0;
 	}
 
 	public Vehicle getVehicle() {

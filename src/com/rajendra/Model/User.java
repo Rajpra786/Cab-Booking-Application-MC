@@ -8,6 +8,9 @@ package com.rajendra.Model;
  *
  */
 public class User extends Person{
+	private Location location;
+
+
 	public User(String userName, String sex, Number age, Location location) {
 		super(userName,sex, age);
 		this.location = location; 
@@ -40,6 +43,4 @@ public class User extends Person{
 	public void setLocation(Location location) {
 		this.location = location;
 	}
-	
-	private Location location;	
 }

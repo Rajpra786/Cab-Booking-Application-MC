@@ -3,13 +3,16 @@
  */
 package com.rajendra.Model;
 
-import java.util.Date;
 
 /**
  * @author rajendra
  *
  */
 public class Vehicle {
+	private String name;
+	private String registrationNumber;
+
+
 	public Vehicle(String name, String registrationNumber) {
 		this.name = name;
 		this.registrationNumber = registrationNumber;
@@ -30,8 +33,4 @@ public class Vehicle {
 	public void setRegistrationNumber(String registrationNumber) {
 		this.registrationNumber = registrationNumber;
 	}
-
-
-	private String name;
-	private String registrationNumber;
 }

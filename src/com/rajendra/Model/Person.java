@@ -8,6 +8,9 @@ package com.rajendra.Model;
  *
  */
 public abstract class Person {
+	private String sex;
+	private Number age;
+	private String userName;
 
 	public Person(String userName,String sex, Number age) {
 		this.sex = sex;
@@ -37,11 +40,4 @@ public abstract class Person {
 	public void setAge(Number age) {
 		this.age = age;
 	}
-
-
-	private String sex;
-	private Number age;
-	private String userName;
-
-
 }
